@@ -9,7 +9,7 @@ gem 'sinatra'
 
 # fix problem with undefined method 'needs_migration'
 #gem 'activerecord', :require => 'active_record'
-gem 'activerecord', '4.2', :require => 'active_record'
+gem 'activerecord', '~> 4.2', '>= 4.2.2', :require => 'active_record'
 
 gem 'sinatra-activerecord'
 gem 'rake'
