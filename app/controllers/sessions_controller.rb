@@ -11,11 +11,11 @@ class SessionsController < ApplicationController
     #raise session[:email].inspect
     # login a user with this email
     login(params[:email], params[:password])
-    redirect '/posts'
+    redirect :'/posts'
   end
 
   get '/logout' do
     logout!
-    redirect '/posts'
+    redirect :'/posts'
   end
 end

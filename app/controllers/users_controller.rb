@@ -8,7 +8,7 @@ class UsersController < ApplicationController
     @user.email = params[:email]
     @user.password = params[:password]
     if @user.save
-      redirect '/login'
+      redirect :'/login'
     else
       # render vs redirect
       # render will keep user info in the next request (render when the current request has data that we need)

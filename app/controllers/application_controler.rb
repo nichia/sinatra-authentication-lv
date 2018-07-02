@@ -36,7 +36,7 @@ class ApplicationController < Sinatra::Base
       if user && user.authenticate(password)
           session[:email] = user.email
       else
-        redirect '/login'
+        redirect :'/login'
       end
     end
 
